@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Some Interesting Image Filters</title>
+
+<script type="text/javascript" src="jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="interesting_filters_external_css.css">
+
+</head>
+
+<body>
+<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
+</script>
+
+<img id="canvas" src="" />
+
+
+<div>
+  <h1>Some Interesting Image Filters</h1>
+  <p>In this page you will be be able to add filters to your pictures
+  <br> To download image, right click</p>
+  </div>
+<p><canvas id="can"></canvas></p>
+
+<p>Choose your image:
+ <input type="file" id="imgfile" accept="image/*" multiple="false" onchange="loadimage()"></p>
+
+<p>
+  <input type="button" value="Red Hue"  onclick="makeredhue()">
+  <input type="button" value="Green Hue" onclick="makegreenhue()">
+  <input type="button" value="Blue Hue" onclick="makebluehue()">
+  <input type="button" value="RGB Hue" onclick="makergbhue()">
+  <input type="button" value="Noise" onclick="makenoiseimg()">
+  <input type="button" value="Negative" onclick="makenegativeimg()">
+  <input type="button" value="Window" onclick="makewindowimg()">
+  <input type="button" value="Grayscale" onclick="makegrayimg()">
+  <input type="button" value="Sepia" onclick="makesepiaimg()">
+  <input type="button" value="Black&White" onclick="makeblacknwhiteimg()">
+ </p>
+<p>
+  <input type="button" value="Reset Image" onclick="resetimage()">
+
+  <script type="text/javascript" src="interesting_filters_external_js.js"></script>
+
+</body>
+</html>
